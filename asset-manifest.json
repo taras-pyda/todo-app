@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/todo-app/static/css/main.a0caadb6.css",
+    "main.js": "/todo-app/static/js/main.be2efc17.js",
+    "static/media/Poppins-MediumItalic.woff": "/todo-app/static/media/Poppins-MediumItalic.7d6034ccc0c41f2ce96b.woff",
+    "static/media/Poppins-Thin.woff": "/todo-app/static/media/Poppins-Thin.c9f0d119171173bbd25e.woff",
+    "static/media/Poppins-Light.woff": "/todo-app/static/media/Poppins-Light.180063ba84ffb105bb44.woff",
+    "static/media/Poppins-Medium.woff": "/todo-app/static/media/Poppins-Medium.2e164af47a4d4722f02a.woff",
+    "static/media/Poppins-MediumItalic.woff2": "/todo-app/static/media/Poppins-MediumItalic.3810210d5caf4414ecd1.woff2",
+    "static/media/Poppins-Light.woff2": "/todo-app/static/media/Poppins-Light.8b94862a1dc80c3e18cf.woff2",
+    "static/media/Poppins-Medium.woff2": "/todo-app/static/media/Poppins-Medium.f0a9bfb06ed7d95d8f8e.woff2",
+    "static/media/Poppins-Thin.woff2": "/todo-app/static/media/Poppins-Thin.e7a3ae8851e346821885.woff2",
+    "static/media/unchecked.svg": "/todo-app/static/media/unchecked.5af8e24fc44b072ac4f6.svg",
+    "static/media/checked-all.svg": "/todo-app/static/media/checked-all.721e8f306e7822bd3829.svg",
+    "static/media/checked-all_active.svg": "/todo-app/static/media/checked-all_active.32c96618256f1e8fe7f9.svg",
+    "static/media/checked.svg": "/todo-app/static/media/checked.572599cf493c207b23ec.svg",
+    "index.html": "/todo-app/index.html",
+    "static/media/cross.svg": "/todo-app/static/media/cross.627128cd32ca887527ab.svg",
+    "main.a0caadb6.css.map": "/todo-app/static/css/main.a0caadb6.css.map",
+    "main.be2efc17.js.map": "/todo-app/static/js/main.be2efc17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0caadb6.css",
+    "static/js/main.be2efc17.js"
+  ]
+}
