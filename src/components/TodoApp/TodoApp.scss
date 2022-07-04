@@ -1,0 +1,7 @@
+@import '../../styles/utils';
+
+.TodoApp {
+  @include border-radius(5px);
+  @extend %text;
+  background-color: $c-white;
+};

@@ -1,0 +1,35 @@
+@import '../../styles/_utils';
+
+.AddTodo {
+  position: relative;
+  padding: 20px 20px 20px 64px;
+
+  &__Button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 14px;
+    background-image: url(../../img/checked-all.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    transition-duration: $anim-time;
+
+    &--active {
+      background-image: url(../../img/checked-all_active.svg);
+    }
+  }
+
+  &__Field {
+    width: 100%;
+    border: none;
+    outline: none;
+    font: inherit;
+    @include placeholder() {
+      font-style: italic;
+      color: $c-grey;
+    }
+  }
+}

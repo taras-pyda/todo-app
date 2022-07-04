@@ -1,0 +1,32 @@
+@import '../../styles/_utils';
+
+.Nav {
+  @include centering-xy();
+  display: flex;
+  align-items: center;
+
+  &__Link {
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid transparent;
+    @include border-radius(3px);
+    @extend %text-small;
+    transition-duration: $anim-time;
+
+    &:hover {
+      border-color: $c-grey;
+    };
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      border-color: $c-red;
+
+      &:hover {
+        border-color: $c-red;
+      }
+    }
+  }
+}

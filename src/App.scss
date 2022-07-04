@@ -1,0 +1,14 @@
+@import './styles/utils';
+
+.App {
+  min-height: 100vh;
+  padding: 30px 20px 50px;
+  background-color: $c-black;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+
+  &__Content {
+    margin: 30px auto;
+    min-width: 230px;
+    max-width: 750px;
+  };
+};

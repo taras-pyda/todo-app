@@ -1,0 +1,18 @@
+@import '../../styles/_utils';
+
+.TodosList {
+  &__Item {
+    border-bottom: $border;
+    background-color: $bgc-red;
+    transition-duration: $anim-time;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--completed {
+      background-color: $bgc-green;
+      color: $c-grey;
+    }
+  }
+}

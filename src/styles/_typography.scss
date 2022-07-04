@@ -1,0 +1,7 @@
+h1 {
+  @extend %h1;
+};
+
+footer {
+  @extend %text-extra-small;
+};

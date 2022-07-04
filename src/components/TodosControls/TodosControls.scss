@@ -1,0 +1,24 @@
+@import '../../styles/_utils';
+
+.TodosControls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  border-top: $border;
+  padding: 0 20px;
+  @extend %text-small;
+
+  &__Button {
+    font-family: inherit;
+    @extend %text-small;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition-duration: $anim-time;
+
+    &:hover {
+      text-decoration-color: $c-black;
+    }
+  }
+}
