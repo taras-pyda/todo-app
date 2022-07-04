@@ -6,6 +6,10 @@
     background-color: $bgc-red;
     transition-duration: $anim-time;
 
+    &:first-child {
+      border-top: $border;
+    }
+
     &:last-child {
       border-bottom: none;
     }
