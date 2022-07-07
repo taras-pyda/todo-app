@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react';
+import { FunctionComponent, useState, useMemo } from 'react';
 import {
   useGetTodosQuery,
   useAddTodoMutation,
@@ -15,7 +15,10 @@ export const AddTodo: FunctionComponent = () => {
   const [ addTodo ] = useAddTodoMutation();
   const [ updateTodo ] = useUpdateTodoMutation();
   const [title, setTitle] = useState('');
-  const isAllCompleted = todos.every(todo => todo.completed);
+  const isAllCompleted = useMemo(
+    () => todos.every(todo => todo.completed),
+    [todos],
+  );
 
   const createTodo = async () => {
     if (title) {
@@ -29,18 +32,14 @@ export const AddTodo: FunctionComponent = () => {
     };
   };
 
-  const completeAllTodos = async () => {
-    if (isAllCompleted) {
-      return;
-    };
-
+  const toggleAllTodos = async () => {
     await Promise.all(todos.map(todo => {
-      if (!todo.completed) {
+      if (todo.completed === isAllCompleted) {
         return updateTodo({
           id: todo.id,
-          body: { completed: true }
+          body: { completed: !isAllCompleted }
         });
-      }
+      };
 
       return todo;
     }));
@@ -55,7 +54,7 @@ export const AddTodo: FunctionComponent = () => {
             'AddTodo__Button',
             { 'AddTodo__Button AddTodo__Button--active': isAllCompleted }
           )}
-          onClick={() => completeAllTodos()}
+          onClick={() => toggleAllTodos()}
         />
       )}
 
